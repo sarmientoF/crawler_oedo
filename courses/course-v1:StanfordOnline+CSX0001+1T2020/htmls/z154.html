@@ -1,0 +1,801 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"XA4GVl5ACwAEV1JQAA==",licenseKey:"1beac94c95",applicationID:"3343327"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(28),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(29),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(29),a=t(28);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(25),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=NREUM.o.REQ,y=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof y&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof y&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof y&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;"string"==typeof o?n=o:"object"==typeof o&&o instanceof g?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n);var s=(""+(o&&o instanceof g&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.endTime=a.now(),this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(28),s=t(29),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(c&&c<r.startTime)return;l("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){if(t instanceof v&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,l("timing",["fi",e,n])}}function s(t){"hidden"===t&&(c=p.now(),l("pageHide",[c]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d,l=t("handle"),p=t("loader"),h=t(27),m=t(19),v=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(w){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(w){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(w){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(t){document.addEventListener(t,a,m(!1))})}h(s)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],26:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(28),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(22),s=t("handle"),c=t(28),f=t("ee"),u=t(26),d=t(23),l=t(17),p=t(19),h=l.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},S=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:S,userAgent:u,disabled:b};if(!b){t(16),t(24),v[w]?(v[w]("DOMContentLoaded",o,p(!1)),m[w]("load",r,p(!1))):(v[g]("onreadystatechange",i),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(29),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"1beac94c95","applicationID":"3343327","transactionName":"NQQGYUZWDUNSVUMPWQxOIkBaVBdZXFgYClsRTwBfVVkEX1JGRxUYAQ4RR0dSFFFBUxkQXwcWFxtCXgZHQAxFA1gGBBZqTFUPX1Bd","queueTime":1,"applicationTime":375,"agent":"","atts":"GUMRFw5MQUBKQl8JWD0XAUdHXgxeEQwVVRhaT1UFFhtBVFlXWQFZPRcBR0deDF4RDBVVGFBPVQUWG0FTXFlcD1MRTwxQVVMGQh1FXhxTQFtVDQEbQUNSUFI5RQcSF1xbWRAeQFNEFV8NDztWW1gIWVZpVAlDDBVGDwUbQUJWR0IDRRY+DkJAaABfXF1eAxRYQwpaQBoRVUJDUhVCBwVGGRZUDEVBRVI5XwZDXhdXWBZCQFMaEAdYMhBUWlEMQld5WQpfDARPdmdvUwADBxxXYlBRVgUWG0FfQVEVXBQxFQVbUlgRVHxYWw9YB0NIF0FEAldWaVwDT0BbRldYWABbHkAGXGUWAApTW0UHf11aXghTSSI3bQQHUwEYB2NUBlBRT0FNRwZwRVNFEl8BAAgeVlsMU1h2TVcDVkNIF1ZbDFNYaUMfRgdDXhdCUhFEWlVWChROQwVFXWgAXFpTWRIUWEMhUUxlBkNHd0cPdQ4IAVtAFU8SV1NHFFMBABBQUGgPVVRXVB9pFQACU1hSPFNfV0QVFFhDC0VRWQZUSxhUCUQHTwBfVVkEX1JGRxUYFQACU1hSPEVHX1sVGCEOEUdHUjRRVVBbA3AOAANuQl4HVVxFGQNYAwMIUGtBBl1sRl4WUw4IClBpFU8SQVNGE1MRFTtUQUMLb0dPRwNpBRQBRkcVWRJAU0QVXw0PSVpGGgxEW1NFRBpAEwFEQVIQRGxDRANEPQADUFpDQQoRU1M+GwYOE1tYWAJUVkQYVhhSUEYZFkUGQUZTRBJpEAQCUEZSERIJFF8SQhISXhobVhZEW1gZA1IaTwtHUxVPEkFTRhNTERU7QEdSEW9aUhVcAlZWUQMGD1ocEURSF0MHEhBqVUIXWFZYQw9VAxUBUWtCEFVBaVEJQwwFO1xaaA5ZV1JbA0EDEwEXDhUTQlxVUhVFPRMBREFSEEQRGhUSUw8RO1RaWA1vRl9TOUBQTxZQRUIGQ0dTU0QMVE1GQVFaE29SWFgIaRcIAGpCBU1WVkJUDlMGPgFNXUQXWV1RFVwCTkMcV2tCEFVBaUQSVxYESlJRQzxdUlhOSFUDDQhGFg1SHBFOVTlDEQQWakdDAkRWGFADQj0MBVtNGQFcXFVcFWkQBBVAUUQXVVcUDVUaQBkGakFEBkJsRUMHQgdPA1BAaA5RXU8ZAkMQABBcW1lBCgIYAl8HW1NUDQEFVQYCBwRUDk5DEFBZRzxRXVlZOUMLBTtDBhkRVUdDRQhTBj4CR1taPFNSVV8DFFhTSBdXWAdVbFlACFMQPglaUEIPVREMFQpbEU8AX1VZBF9SRkcVGAEOEUdHUhRRQVMZEF8HFhcbQl4GR0AUG0RVDQUBaltADVVBFA1EUwwGBVJRWgZeRxtSCFEDBgEXGBUAX1dTaAlBDAQWakBfBl1WFA1EUwwGBVJRWgZeRxQbRFUNBQFqW0ANVUFpRBdDAwVGDxZSDVdSUVJESx8="}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="origin-trial" content="AmCPe490xNouA2PcOZzbq+f1bBVuCasQNCnzkMH8QltULGpp/PV5ih0P8U8KwO3JfCxBO7U5FTKB3JdqxZbShwMAAACDeyJvcmlnaW4iOiJodHRwczovL2VkeC5vcmc6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVEaWZmZXJlbnRPcmlnaW5TdWJmcmFtZURpYWxvZ1N1cHByZXNzaW9uIiwiZXhwaXJ5IjoxNjM5NTI2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+
+
+
+  <title>
+
+ CSX0001 Courseware | edX
+</title>
+
+
+  
+
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/i18n/en/djangojs.705ead69114e.js"></script>
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+  
+  <link rel="icon" type="image/x-icon" href="https://edx-cdn.org/v3/prod/favicon.ico"/>
+
+
+
+  
+  
+
+    <link href="https://prod-edx-edxapp-assets.edx-cdn.org/static/edx.org-next/css/lms-style-vendor.a44d8153e6e2.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+  
+
+    <link href="https://prod-edx-edxapp-assets.edx-cdn.org/static/edx.org-next/css/lms-main-v1.b2fc7fc1d3f3.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    
+    
+<script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/lms-main_vendor.3c3c9a2604d6.js" charset="utf-8"></script>
+
+
+    
+    
+<script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/lms-application.98d9a8549a03.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/bundles/commons.f9bef2bb310a6372f636.ba256a9195ae.js" ></script>
+
+
+
+  <script>
+    window.baseUrl = "https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/views/message_banner': 'js/views/message_banner.141974fd4f5d',
+'moment': 'common/js/vendor/moment-with-locales.e3cc27d412a1',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/dateutil_factory': 'js/dateutil_factory.a28baef97506',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.474ff5ba9de3',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.706ac91a0d73',
+'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.ca68388d81d6',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'hls': 'common/js/vendor/hls.5e0c7e1b3bfd'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+
+  
+
+    <link href="https://prod-edx-edxapp-assets.edx-cdn.org/static/edx.org-next/css/lms-style-course-vendor.dc9629c68006.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+
+    <link href="https://prod-edx-edxapp-assets.edx-cdn.org/static/edx.org-next/css/lms-course.5239dd8e2ad9.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/jquery.autocomplete.964a0bfb4fd2.js" async></script>
+<script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/src/tooltip_manager.b8fa94d4cefc.js" async></script>
+
+<link href="https://prod-edx-edxapp-assets.edx-cdn.org/static/css/vendor/jquery.autocomplete.efeb242dd532.css" rel="preload" type="text/css">
+  
+
+
+<script type="text/javascript">
+  var $$course_id = "course\u002Dv1:StanfordOnline+CSX0001+1T2020";
+</script>
+
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    null
+</script>
+
+  
+
+  
+
+<script src=https://www.edx.org/optimizelyjs/1743970571.js></script>
+
+  
+
+
+<!-- begin Segment -->
+<script type="text/javascript">
+  // Asynchronously load Segment's analytics.js library
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("DxfS1h06K5HA7CZDMzmsmuni8JBLmI9u");
+  analytics.page();
+  }}();
+  // Note: user tracking moved to segment-io-footer.html
+</script>
+<!-- end Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+    <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY" />
+
+  <meta name="openedx-release-line" content="master" />
+
+
+
+
+    <script type="text/javascript">
+        (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+        branch.init('key_test_amtw27wsxA2wo5cy7NTROenatBhky0ZU');
+    </script>
+
+</head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_en">
+
+
+<div id="page-prompt"></div>
+    
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%> <% // xss-lint: disable=underscore-not-escaped %>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%- largeALT %>, <%- gettext('Large') %>" src="<%- largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+<div class="course-wrapper chromeless">
+  <section class="course-content" id="course-content"      data-enable-completion-on-view-service="false"     style="display: block; width: auto; margin: 0;"
+  >
+      <main id="main" aria-label="Content">
+        <div class="course-expiration-message"><strong>Audit Access Expires <span class="localized-datetime" data-format="shortDate" data-timezone="None"                        data-datetime="2022-01-31T10:24:35+00:00" data-language="en">Jan 31, 2022</span></strong><br>You lose all access to this course, including your progress, on <span class="localized-datetime" data-format="shortDate" data-timezone="None"                        data-datetime="2022-01-31T10:24:35+00:00" data-language="en">Jan 31, 2022</span>.<br>Upgrade by <span class="localized-datetime" data-format="shortDate" data-timezone="None"                        data-datetime="2022-08-21T22:59:00+00:00" data-language="en">Aug 21, 2022</span> to get unlimited access to the course as long as it exists on the site. <a id="FBE_banner" href="https://ecommerce.edx.org/basket/add/?sku=3BBBCE1">Upgrade now<span class="sr-only"> to retain access past <span class="localized-datetime" data-format="shortDate" data-timezone="None"                        data-datetime="2022-01-31T10:24:35+00:00" data-language="en">Jan 31, 2022</span></span></a></div>
+<div class="xblock xblock-student_view xblock-student_view-vertical" data-course-id="course-v1:StanfordOnline+CSX0001+1T2020" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:StanfordOnline+CSX0001+1T2020+type@vertical+block@z154" data-request-token="0b44025c618011ecb2293ba59c2c4a14" data-graded="True" data-has-score="False">
+  
+
+
+
+
+
+
+
+
+
+<div class="vert-mod">
+    <div class="vert vert-0" data-id="block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153">
+        
+<div class="xblock xblock-student_view xblock-student_view-video xmodule_display xmodule_VideoBlock" data-course-id="course-v1:StanfordOnline+CSX0001+1T2020" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="video" data-usage-id="block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153" data-request-token="0b44025c618011ecb2293ba59c2c4a14" data-graded="True" data-has-score="False">
+  <script type="json/xblock-args" class="xblock-json-init-args">
+    {"xmodule-type": "Video"}
+  </script>
+  
+
+
+    <h3 class="hd hd-2"></h3>
+
+<div
+    id="video_z153"
+    class="video closed"
+    data-metadata='{&#34;autoAdvance&#34;: false, &#34;autohideHtml5&#34;: false, &#34;autoplay&#34;: false, &#34;captionDataDir&#34;: null, &#34;completionEnabled&#34;: true, &#34;completionPercentage&#34;: 0.9, &#34;duration&#34;: 0.0, &#34;end&#34;: 0.0, &#34;generalSpeed&#34;: 2.0, &#34;lmsRootURL&#34;: &#34;https://courses.edx.org&#34;, &#34;poster&#34;: null, &#34;prioritizeHls&#34;: true, &#34;publishCompletionUrl&#34;: &#34;/courses/course-v1:StanfordOnline+CSX0001+1T2020/xblock/block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153/handler/publish_completion&#34;, &#34;recordedYoutubeIsAvailable&#34;: true, &#34;savedVideoPosition&#34;: 0.0, &#34;saveStateEnabled&#34;: true, &#34;saveStateUrl&#34;: &#34;/courses/course-v1:StanfordOnline+CSX0001+1T2020/xblock/block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153/handler/xmodule_handler/save_user_state&#34;, &#34;showCaptions&#34;: &#34;true&#34;, &#34;sources&#34;: [&#34;https://s3-us-west-1.amazonaws.com/prod-edx/CS101/Videos/4+-+2+-+Software+II+(11+mins).mp4&#34;], &#34;speed&#34;: null, &#34;start&#34;: 0.0, &#34;streams&#34;: &#34;1.00:8rbMQeHr3Uk&#34;, &#34;transcriptAvailableTranslationsUrl&#34;: &#34;/courses/course-v1:StanfordOnline+CSX0001+1T2020/xblock/block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153/handler/transcript/available_translations&#34;, &#34;transcriptLanguage&#34;: &#34;en&#34;, &#34;transcriptLanguages&#34;: {&#34;en&#34;: &#34;English&#34;}, &#34;transcriptTranslationUrl&#34;: &#34;/courses/course-v1:StanfordOnline+CSX0001+1T2020/xblock/block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153/handler/transcript/translation/__lang__&#34;, &#34;ytApiUrl&#34;: &#34;https://www.youtube.com/iframe_api&#34;, &#34;ytMetadataEndpoint&#34;: &#34;&#34;, &#34;ytTestTimeout&#34;: 1500}'
+    data-bumper-metadata='null'
+    data-autoadvance-enabled="False"
+    data-poster='null'
+    tabindex="-1"
+>
+    <div class="focus_grabber first"></div>
+
+    <div class="tc-wrapper">
+      <div class="video-wrapper">
+          <span tabindex="0" class="spinner" aria-hidden="false" aria-label="Loading video player"></span>
+          <span tabindex="-1" class="btn-play fa fa-youtube-play fa-2x is-hidden" aria-hidden="true" aria-label="Play video"></span>
+          <div class="video-player-pre"></div>
+          <div class="video-player">
+              <div id="z153"></div>
+              <h4 class="hd hd-4 video-error is-hidden">No playable video sources found.</h4>
+              <h4 class="hd hd-4 video-hls-error is-hidden">
+                  Your browser does not support this video format. Try using a different browser.
+              </h4>
+          </div>
+          <div class="video-player-post"></div>
+          <div class="closed-captions"></div>
+          <div class="video-controls is-hidden">
+              <div>
+                  <div class="vcr"><div class="vidtime">0:00 / 0:00</div></div>
+                  <div class="secondary-controls"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="focus_grabber last"></div>
+
+    <h3 class="hd hd-4 downloads-heading sr" id="video-download-transcripts_z153">Downloads and transcripts</h3>
+    <div class="wrapper-downloads" role="region" aria-labelledby="video-download-transcripts_z153">
+        <div class="wrapper-download-video">
+            <h4 class="hd hd-5">Video</h4>
+            <a class="btn-link video-sources video-download-button" href="https://s3-us-west-1.amazonaws.com/prod-edx/CS101/Videos/4+-+2+-+Software+II+(11+mins).mp4">
+                Download video file
+            </a>
+        </div>
+        <div class="wrapper-download-transcripts">
+            <h4 class="hd hd-5">Transcripts</h4>
+            <ul class="list-download-transcripts">
+                    <li class="transcript-option">
+                        
+                        <a class="btn btn-link" href="/courses/course-v1:StanfordOnline+CSX0001+1T2020/xblock/block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153/handler/transcript/download" data-value="srt">Download SubRip (.srt) file</a>
+                    </li>
+                    <li class="transcript-option">
+                        
+                        <a class="btn btn-link" href="/courses/course-v1:StanfordOnline+CSX0001+1T2020/xblock/block-v1:StanfordOnline+CSX0001+1T2020+type@video+block@z153/handler/transcript/download" data-value="txt">Download Text (.txt) file</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+    </div>
+    <div class="vert vert-1" data-id="block-v1:StanfordOnline+CSX0001+1T2020+type@html+block@z152">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock" data-course-id="course-v1:StanfordOnline+CSX0001+1T2020" data-mark-completed-on-view-after-delay="1000" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:StanfordOnline+CSX0001+1T2020+type@html+block@z152" data-request-token="0b44025c618011ecb2293ba59c2c4a14" data-graded="True" data-has-score="False">
+  <script type="json/xblock-args" class="xblock-json-init-args">
+    {"xmodule-type": "HTMLModule"}
+  </script>
+  
+<link href="/assets/courseware/v1/52a0e88f9ae8711c282d3e2076c513db/asset-v1:StanfordOnline+CSX0001+1T2020+type@asset+block/style-edx.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/assets/courseware/v1/796d8d0072ea1c937bb0dcd161f49f36/asset-v1:StanfordOnline+CSX0001+1T2020+type@asset+block/cs101-edx.js"></script>
+<script type="text/javascript" src="/assets/courseware/v1/225acbaa3ed9ad76c36be28173c00ac1/asset-v1:StanfordOnline+CSX0001+1T2020+type@asset+block/cs101-table-edx.js"></script>
+
+
+<h1>Computer Languages</h1>
+
+
+<p>
+
+
+<!--
+Want to tighten this up
+-Talk about languages with high level features
+
+-1. Compiler
+ -translation
+ --Do want to hit what "source code" is for sure
+
+2. Interpreter/Dynamic
+ -slower
+ -more programmer-friendly features
+
+
+-Get back to language evaluation
+ -faster
+ -features
+ -end with: language which let programmers finish sooner, generally winning
+ -reflection of Moore's law
+
+-->
+
+
+<h1>From Programmer to the CPU</h1>
+
+<ul class="slide">
+<li>We've written small Javascript programs
+<li>We've seen large program like Firefox
+<li>Computer language used by a person (e.g. Javascript)
+<li>vs. the simple machine code instructions in the CPU
+<li>What's the connection?
+<li>(Here the basic themes, not the details)
+</ul>
+
+
+<h2>Computer Languages</h2>
+
+<p>It is extremely rare to write machine code by hand. Instead, a programmer writes code in a more "high level" computer language with features that are more useful and powerful than the simple operations found in machine code. For CS101, we write code in Javascript which supports high level features such as strings, loops, and the print() function. None of those high level features are directly present in the low level machine code; they are added by the Javascript language. There are two major ways that a computer language can work.
+
+<h2>Source Code and Compiler</h2>
+
+<p>One common computer language strategy is based on a "compiler". The computer languages C and its derivative C++ are old and popular computer languages that use this strategy, although they tend to have fewer features than dynamic languages (below).
+
+<p>In C++, the programmer writes C++ code which includes high level facilities such as strings and loops (much as we have seen in Javascript). Here is some C++ code to append a "!" at the end of a string.
+
+<ul class="slide">
+<li>Computer languages -- "high level" features
+<br>--e.g. loops, if-statements, strings
+<li>e.g. C, C++, Javascript, Java
+<li>Programmer writes "source code" of a program in a language, say, C++
+<li>Example C++ code -- how to get to the CPU?
+</ul>
+
+<pre>
+  // C++ code
+  a = "hi";
+  b = a + "!";
+</pre>
+
+<p>This code appends the string "!" on to the end of "hi", resulting in the string "hi!" stored into the variable b. The machine code instructions in the CPU are too primitive to implement this append operation as one or two instructions. However, the operation can be accomplished by a longer sequence of machine code instructions strung together.
+
+
+<h2>Compiler</h2>
+
+<ul class="slide">
+<li>"Compiler" looks at the source code
+<li>Compiler <b>translates</b> the source code into a large number of machine code instructions
+<li>Suppose a high level construct, like an if-statement, can be implemented by a sequence of 5 machine code instructions
+<li>e.g. Firefox -- written in C++
+<br>--Compiler takes in Firefox C++ source code, produces Firefox.exe
+<li>The compilation step can be done once and long before the program is run (e.g. produce Firefox.exe at Mozilla headquarters)
+<li>The end user does not need to the source code or the compiler. Distribute the program.exe file in working form
+<li>Does not work backwards -- having the .exe, you cannot recover the source code (well)
+</ul>
+
+<p>
+<img src="/assets/courseware/v1/0bf69cb5cb0b7151263e35c580000a00/asset-v1:StanfordOnline+CSX0001+1T2020+type@asset+block/software-compiler.png" alt="compiler takes in source code, produces machine code program">
+
+<p>The <b>Compiler</b> for the C++ language, reads that C++ code and translates and expands it to a larger sequence of the machine code instructions to implement the sequence of actions specified by the C++ code. The output of the compiler is, essentially, a program file (.exe or whatever) made of many machine code instructions that implements the actions specified in the C++ code. The compiler produces the .exe file from the C++ code, and it is finished. Running the .exe can happen later, and is a separate step.
+
+<h2>Source Code</h2>
+
+<ul class="slide">
+<li>Having the .exe allows one to run the program
+<li>To add feature or fix a bug, ideally you want the source code
+<br>--Add a feature in the source code, then run the compiler again to make a new version of the .exe
+<li><b>Open Source</b> software
+<li>The source code is available to all, along with the right to make modifications
+<li>1. Typically the software does not cost anything
+<li>2. <b>Freedom</b> the end user is not dependent on the original vendor to fix bugs, or perhaps the vendor goes out of business
+<li>The user can make the change themselves (since they have access to the source)
+<li>Insurance/freedom policy
+<li>Often the license terms will require the change to made available to the wider community in some cases ... sharing back to the community
+<li>Open source is a very successful model for some cases
+<li>Talk about this more later, mentioning now since it is so close to the idea of what "source code" is
+</ul>
+
+<p>The "source code" is the high level code authored by the programmer and fed into the compiler. Generally just the program.exe file is distributed to users. The programmer retains the source code. Changing the program in the future generally requires access to the source code. For example to add a feature, the programmer would make changes in the source code, and then run the compiler to produce a new version of the program.
+
+<h2>Open Source</h2>
+
+<p>"Open Source" refers to software where the program includes access to its source code, and a license where the user can make their own modifications. Typically open source software is distributed for free. Critically, beyond the free price, open source software also includes <b>freedom/independence</b> since the user is not dependent on the original vendor to make changes or fixes or whatever to the source code. Since the source code is available, if a user feels strongly enough about some feature, they can add the feature themselves, or pay someone to add the feature. Open source means you are not dependent on some other part .. attractive as software is such a critical part of many organizations. Typically open source licenses include a requirement that such improvements to the source code be made available back to the community at large. We'll talk about open source more later on, but I wanted to touch on it here since it is a good example of the difference between a program and its source code.
+
+
+<h2>Dynamic (interpreter) Languages</h2>
+
+<ul class="slide">
+<li>Dynamic languages (big tent here)
+<li>e.g. Java, Javascript, Python
+<li>Can be implemented by an "interpreter"
+</ul>
+
+<p>There is a broad category of more modern languages such as Java (the world's most popular language, used in Stanford CS106A), Javascript, and Python, which do not use the compiler/machine-code strategy. Instead, these languages can be implemented by an "interpreter", and I will lump them into the category of "dynamic" languages.
+
+<h2>Interpreter</h2>
+
+<ul class="slide">
+<li>Interpreter is a program which "runs" other code
+<li>e.g. web browsers includes a Javascript interpreter
+<br>--Browser "runs" bits of Javascript code in a web page, such as ours
+<li>Interpreter looks at one line at a time
+<li>Deconstructs what each line says to do
+<li>The interpreter then does that action, in the moment
+<li>Then proceeds to the next line
+</ul>
+
+
+<p>So in Javascript when we have code lines like:
+
+<pre>
+  // Javascript code
+  a = 1;
+  b = a + 2;
+</pre>
+
+<ul class="slide">
+<li>e.g. Interpreter looks at <code>a = 1;</code>, does it
+<li>e.g. Interpreter looks at <code>b =  a + 2;</code>, does it
+<li>The compiler <b>translates</b> source code to equivalent machine code
+<li>The interpreter <b>does</b> the code, looking at each line and doing it
+</ul>
+
+<p>An interpreter is a program which reads in source code as its input, and "runs" the input code. The interpreter proceeds through the code given to it, line by line. For each line, the interpreter deconstructs what the line says and performs those actions, piece by piece. For example, Javascript which we have been using, is implemented by a Javascript interpreter which is built into Firefox.
+
+<p>The interpreter runs this code, by taking the lines one at a time, and for each, interpreting its actions. For "a = 1;" the interpreter reserves a few bytes to store the value of a, then stores the value 1 into those bytes. Then for "b = a + 2;" the interpreter evaluates (a + 2) getting the value 3, reserves some bytes for the b variable, then stores the 3 into the b bytes.
+
+<p>A <b>compiler</b> translates all the source code into equivalent machine code program.exe to be run later -- it is a bulk translation. An <b>interpreter</b> looks at each line of code, and translates and runs it in the moment, and then proceeds to the next line of source code. The interpreter does not produce a program.exe, instead it performs the actions specified in the source code directly.
+
+<h2>Compiler vs. Interpreter Evaluation</h2>
+
+<ul class="slide">
+<li>Disclaimer: there are many languages, no one "best" language, it depends!
+<li>Compiled code tends to run faster
+<li>The .exe tends to be "lean" .. compiler has removed overhead, some decisions
+<li>Dynamic/interpreter languages
+<br>--Tend to have a greater number of programmer-friendly features
+<Br>--i.e. programmers are often more productive in dynamic languages
+<br>--The resulting program tends to run somewhat slower than compiled code
+</ul>
+
+<p>Compiled code generally runs faster than interpreted code. This is because many questions -- how to append to this string, how many bytes do I need here -- are resolved by the compiler at compile time, long before the program runs. The compiler has, in effect, pre-processed the source code, stripping out many questions and complications, leaving the program.exe as lean and direct as it can be to just run.
+
+<p>In contrast, the interpreter deals with each line in the moment, so all the deciphering and overhead costs of interpreting each line are paid as it runs. These overhead costs in effect make the interpreted program run more slowly than the equivalent compiled program.
+
+
+<h2>Dynamic Languages - More Features / Slower</h2>
+
+
+<ul class="slide">
+<li>Dynamic languages tend to have more features (programmer-friendly)
+<li>e.g. Memory Management
+<br>--C and C++: partially manual, some programmer input required
+<br>--Dynamic languages: automatic memory management, no programmer input needed
+<br>--Automatic memory management not free: spending CPU cycles to lighten programmer workload
+<li>Tradeoff
+<br>--Dynamic languages often allow the programmer to get things done faster
+<br>--However the dynamic code runs a bit more slowly compared to compiled code
+<li>Current trend is towards dynamic languages
+<br>--<b>Programmers</b> are scarce
+<br>--It's attractive to save some programmer time at the expense of some CPU/memory use
+<br>--Moore's law reinforces: CPU cheap, programmer relatively rare/expensive
+</ul>
+
+<p>Supporting features tends to be easier in dynamic languages compared to compiled languages, which is why dynamic languages tend to have a greater number of programmer-friendly features.
+
+<p>"Memory management" is the problem in a program of knowing, over time, when bytes of RAM are needed and when they can be reclaimed and use for something else. Every program must solve this problem. Memory management is an excellent example of a feature different between compiled and dynamic languages -- most modern dynamic languages manage memory automatically. The programmer can focus on the problem to be solved, and the dynamic language will take care of managing the memory.
+
+<p>In contrast, in C and C++, the programmer at times must think about memory management at times, and may have to author lines of code to help solve it.  (Aside: many crashes in C and C++ programs are due to errors in the programmer's memory management scheme. It is a difficult problem to solve manually.)
+
+<p>The memory management in dynamic languages is not free. The CPU must run extra lines to solve the memory management. Dynamic languages, in effect, spend CPU cycles to manage the memory. This fits the general pattern that dynamic languages run with more overhead (i.e. more slowly) than compiled languages, but offer superior programmer-friendly features.
+
+<p>Because dynamic languages like Java and Python have more features, a programmer can often write the code to solve a problem more quickly in a dynamic language than they can in C++. The time and attention of programmers is generally quite scarce (translation: programmers are scarce and expensive, which is why you want to be a CS major, or at least a minor!). Therefore, dynamic languages which allow the programmer to produce a correct program more quickly and reliably are pretty attractive, even if the resulting program uses more CPU and more RAM. Aside: Moore's law in effect, keeps making the programmer relatively more expensive compared to the CPU.
+
+<p>Overall, different computer languages have different strengths and weaknesses, and best language for a particular problem depends on the situation. As above, dynamic languages like Java and Python can run slower and generally operate with higher overhead than C++ code, so for some problems, writing in C or C++ is the best strategy. Also, Java and Python lack certain "low level access" features which are needed in rare cases.
+
+<h2>JIT Just In Time Compiler</h2>
+
+<ul class="slide">
+<li>JIT -- compile code of a dynamic language on the fly
+<li>All major browsers now have a JIT for the Javascript code they run (Chrome)
+<li>Best of both worlds
+<li>Flexibility of dynamic languages
+<li>Combined with most of the performance of the compiled world
+<li>Active area of research, works pretty well
+</ul>
+
+<p>The most modern form of dynamic language is implemented with an interpreter paired with a Just In Time compiler (JIT) trying to get the best of both worlds. The JIT looks a sections of dynamic code that are being run very frequently, and for those, does a compile to native code for that section on the fly. So the interpreter is used for simple cases, but for important sections of dynamic code (like the inside of a loop), the JIT creates a block of machine code in RAM for that section. The machine code is run for that section of dynamic code, giving similar performance to C++, and is discarded when the program exits. Java and Javascript both use JIT technology extensively. The great speedup of browsers in the last few years has been largely due to the implemented of JIT technology for Javascript. The JIT erases most but not all of the "10x" penalty. Even with JITs, dynamic languages still have higher overhead use of resources compared to C and C++.
+
+
+<!--
+could have "conclusion" section here
+
+-->
+
+
+<!--
+
+<h2>Common Scenarios To Understand</h2>
+
+<ul>
+<li><b>Computer boots up</b> -- when first powered up, the hardware runs a tiny "boot loader" program which examines the available hardware and allows the user to select what operating system to start. The operating system starts up, sets up housekeeping, and typically launches a file viewer program to show the user the file systems available.
+<li><b>User double clicks on Firefox</b> -- the Firefox icon basically points to a file (actually a group of files) that contain the machine code for Firefox (Firefox is written in C++). The OS sets up a new program environment -- some RAM, a window to draw to --  copies the first section of machine code from the .exe file up to RAM, and starts the CPU running that code.
+<li><b>User double clicks on a flowers.jpg file</b> the OS launches a viewer program to display the image stored in that file. The ".jpg" "extension" on the filename suggests what type of file it is. Note however, the extension can definitely be wrong; changing it is as easy as renaming the file. Typically, the operating system keeps associations of what file type to open with what program -- open .jpg files with one program, .pdf files with another, and so on. In this case, the OS would launch an image viewing program, pointing it to the flowers.jpg file as the one to display (that is, display the image whose bytes are stored in that file).
+</ul>
+
+-->
+
+<!--
+<p>However, interpreted languages generally have more powerful features than compiled languages. This stems from the flexibility of the interpreter strategy. It's relatively easy to add a new language feature to be supported by an interpreter.
+
+
+<p>The compiler does many things ahead of time. For example, looking at all the C++ source code, and producing a .exe block of machine code that completely implements what is specified in the C++ source code. At run time, we just have the .exe; we do not need the original C++ code. It is not possible to reverse the compile process, starting with the .exe and recovering the original C++ code. The reverse can only be done in a very limited way, not producing the full, useful C++ code (all the comments are missing, as a first example).
+
+
+<p>The native compiled code runs fast because many questions - is there an = sign here, does this line deal with strings or numbers - all those questions are sorted out at compile-time, not when the program is running. In contrast, the dynamic language deals with all those issues as the program is running, making the dynamic code, in effect, slower.
+
+<p>Javascript code that is "run" by an interpreter is another form of program that can run on a computer. Behind the curtain, the interpreter is itself a program, for example written in C++. So we are building one layer on top of another. This works!
+
+-->
+
+<!--
+
+-data file vs. program (security)
+
+-cpu .. native code (network effect)
+-program
+
+-operating system/ boot up
+-reboot
+
+-higher level languages
+
+5 common actions
+1. boot up
+2. double click a jpeg file
+3. double click firefox, then enter a url
+
+-->
+
+
+
+
+
+</div>
+
+    </div>
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/dateutil_factory.a28baef97506.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+<script>
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+</script>
+
+</div>
+
+      </main>
+  </section>
+</div>
+
+
+
+      
+    </div>
+
+
+
+  
+  
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/common/js/vendor/jquery.scrollTo.525edcc52fe8.js" async></script>
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/vendor/flot/jquery.flot.d3d45ff0c6a8.js" async></script>
+
+  
+    
+<script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/lms-courseware.9517dcd2081d.js" charset="utf-8"></script>
+
+
+
+    
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    messageStyle: "none",
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+<script type="text/javascript">
+    // Activating Mathjax accessibility files
+    window.MathJax = {
+        menuSettings: {
+            collapsible: true,
+            autocollapse: false,
+            explorer: true
+        }
+    };
+</script>
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+
+<script src='https://prod-edx-edxapp-assets.edx-cdn.org/static/bundles/VideoBlockPreview.2d6286863233ecb5d1f5.461a6eb76a83.js' type='application/javascript'></script>
+<script src='https://prod-edx-edxapp-assets.edx-cdn.org/static/bundles/XModuleShim.b0a0bcfa4bfc116299b0.0021dbb8621f.js' type='application/javascript'></script>
+<script src='https://prod-edx-edxapp-assets.edx-cdn.org/static/bundles/HtmlBlockPreview.47dfb3a011d61e073bb9.68644e9f6662.js' type='application/javascript'></script>
+<script src='https://prod-edx-edxapp-assets.edx-cdn.org/static/bundles/VerticalStudentView.218999454019487e3bbe.50411955078b.js' type='application/javascript'></script>
+
+
+
+  
+
+
+    <!-- begin segment footer -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            analytics.identify(
+                "44756289",
+                {
+                    email: "fsarmientod@uni.pe",
+                    username: "FernandoSD"
+                },
+                {
+                    integrations: {
+                        // Disable MailChimp because we don't want to update the user's email
+                        // and username in MailChimp on every page load. We only need to capture
+                        // this data on registration/activation.
+                        MailChimp: false
+                    }
+                }
+            );
+        });
+    </script>
+    <!-- end segment footer -->
+
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/vendor/noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/utils/navigation.08930e16ab3d.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/header/header.309a1243e175.js"></script>
+  
+  <script type="text/javascript" src="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/src/jquery_extend_patch.54dddef28d15.js"></script>
+  <div id="lean_overlay"></div>
+
+</body>
+</html>
+
+

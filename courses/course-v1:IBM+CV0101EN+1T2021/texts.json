@@ -1,0 +1,188 @@
+{
+	"text_001": {
+		"section": "Week 1 - Introduction to Computer Vision",
+		"subsection": "Reading: Course Overview",
+		"unit": "Course Overview",
+		"body": "Course Overview This Introduction to Computer Vision course is designed to introduce you to applying computer vision techniques to real-world problems. After completing this course, you will be able to apply image processing, traditional Machine Learning, and Deep Learning techniques to Computer Vision problems by integrating your solution into an application. You will also be able to deploy your computer vision application in the cloud and add them to your project portfolio. This course focuses on real-world application and utilizes a hands-on approach to learning. There are two types of hands-on labs in this course: labs that use  Jupyter Notebooks  and labs that use  CV Studio , a free tool designed specifically to help you learn the basics of computer vision. Both types of labs are provided to you by the IBM Skills Network Labs environment. You will use Jupyter Notebooks to quickly get started on image processing, Machine Learning, Deep Learning, and Computer vision tasks using pre-processed datasets. CV Studio-based labs let you focus on the actual learning by making it easy to upload, label, train, and test images train your model, and most importantly, integrate your model into a real application and, optionally, deploy your application on the cloud for others to use. \u00a0 This course is suitable for a variety of professionals and students intending to start their journey in Computer Vision who want an in-depth but simplified understanding of different techniques used in this field. We strongly recommend taking the  Python for Data Science, AI & Development  course before starting this course to get familiar with the Python programming language, Jupyter Notebooks, and popular libraries. Important  Every module  in the course has: Three to nine  hands-on labs and assignments  in Python and CV Studio A  practice assessment  to test your understanding of the materials A  graded quiz  that will contribute to 8% of the total grade for the course In the final week, you will be given a project scenario in which you will be deploying your models to the cloud and a final exam. To certify completion, you will need to complete and submit your project for a peer review and complete your final exam. The project will be worth 20% of the final grade for the course and the final exam will be 40% of your final grade."
+	},
+	"text_002": {
+		"section": "Week 1 - Introduction to Computer Vision",
+		"subsection": "Articles",
+		"unit": "Articles",
+		"body": "Articles READINGS W\u200be encourage you take some time to explore the following two readings. These are just two of the countless ways in which Computer Vision continues to revolutionize industries across nearly every domain. IBM Research Releases \u2018Diversity in Faces\u2019 Dataset to Advance Study of Fairness in Facial Recognition Systems https://www.ibm.com/blogs/research/2019/01/diversity-in-faces/ Abu Dhabi National Oil Company (ADNOC): Enhancing accuracy, consistency and speed of rock analysis to support better decisions https://www.ibm.com/case-studies/abu-dhabi-national-oil-company-adnoc"
+	},
+	"text_003": {
+		"section": "Week 1 - Introduction to Computer Vision",
+		"subsection": "Computer Vision in Action",
+		"unit": "Computer Vision in Action",
+		"body": "Computer Vision in Action There are two parts to building a Computer Vision application, developing the model and deploying it via an application. CV Studio is a Computer Vision learning tool to build your Computer Vision application in an interactive web application. Once you have developed your Computer Vision application, you can deploy it. You can check out some of the demos on CV Studio at the following\u00a0 link . You can then click on some of the demos in the course as shown in the following lab:\u00a0"
+	},
+	"text_004": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Set up Computer Vision learning environment",
+		"unit": "Set up Computer Vision learning environment",
+		"body": "In case you are having issues viewing the lab instructions below or prefer to view the instructions in a new browser tab,\u00a0 click here When building Computer Vision applications, we deal with a lot of images, videos and other assets that require storage. Image processing also requries significant computing power. The ultimate goal of every computer vision project is to have it deployed as part of an application and every application requires infrastructure to run. To help you with your learning, IBM is providing storage, compute and application infrastructure on the cloud. To use these resources you need to have an IBM Cloud account. This account is free of charge and does not require any commitment. If you already have an account on IBM Cloud, go ahead to the next session, otherwise follow the steps below to create an IBM Cloud account and associate CV Studio with this account: Step 1: Apply for an IBM Cloud account Go to\u00a0 IBM Cloud : Follow the instructions provided to request IBM Cloud account Important:\u00a0 Use the same email address you are using in this course Step 2: Connect CV Studio to your IBM Cloud account Go to\u00a0 CV Studio Click on\u00a0 My Projects \u00a0in the top right corner Click\u00a0 Sign into IBM Cloud \u00a0at the top right corner. You are all set! Congratulations! Your learning environment is all set with access to storage, compute and application infrastructure. Please remember your IBM Cloud id and password. You will need them to log in if prompted."
+	},
+	"text_005": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Getting started with CV Studio!",
+		"unit": "Getting started with CV Studio!",
+		"body": "In case you are having issues viewing the lab instructions below or prefer to view the instructions in a new browser tab,\u00a0 click here Getting started with CV Studio CV Studio is a Computer Vision learning tool made for you which makes building your Computer Vision application fun and interactive. CV Studio can be accessed through this\u00a0 link \u00a0or if you are accessing this doc through our course, you can find the link in the lab section of your course. We are continuing to expand our learning modules and we currently have applications for Image Classification and Object Detection Each of the learning modules are standalone with instructions and resources about each algorithm. To build, train and deploy your Computer Vision model, here are some quick simple steps: Start a New Project: \u00a0After logging into\u00a0 CV Studio , you can create a\u00a0 New Project . You will see a box like this. Choose a\u00a0 Name , the\u00a0 Type \u00a0has been chosen for you based on the algorithm you will be using. Upload Images: \u00a0Once you create your project you will land on the\u00a0 Upload \u00a0page. Here you will upload your images for training, you can do this by using the\u00a0 Upload \u00a0button at the right or dragging and dropping your files or folders. The current accepted formats are\u00a0 .jpg ,\u00a0 .png , and\u00a0 .zip \u00a0files and folders containing\u00a0 jpg \u00a0and\u00a0 png \u00a0files. Annotate your images: For object detection, use the integrated tool to highlight target elements in your images.\u00a0 For image classification, you can annotate within the tool by clicking on the images and adding them to a label. You can add them to a new label or a label you already created. If you name your folder with the respective classes, the annotation will happen automaticallly when you upload your images. We will see the classes cat and dog.\u00a0 Next we go to\u00a0 Train Model \u00a0on the bottom right. Train Model: \u00a0You will be able to train your model using the image annotations from the previous step. You will be required to enter a name, pick a tool and select the training algorithm. Once you fill this in, you can now open the tool and run your model. Once the model is done running, you will come back to this interface and create an application. Use Model: You will come back into this interface and create a\u00a0 New Application \u00a0to test the model. Choose a name for your application, Choose a Model Choose the appropriate Training Run Once you are done, you will now launch a tool to test the app. Showcase your app: If you are using a learning module that supports deployment to the web, you will be able to click on the showcase tab to deploy your web app to code engine."
+	},
+	"text_006": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Lab:  Label your Data and Perform Image Classification with KNN",
+		"unit": "Label your Data and Perform Image Classification with KNN",
+		"body": "In this lab, you will use a K-Nearest-Neighbor (K-NN) classifier to classify dogs and cats with the provided dataset.\nOpening the tool will direct you to CV Studio. We have already created a project template for you, so you can get right to the action! To upload the dataset, open the drop down menu at the top right of the page and click \"Upload from URL\".  Then copy and paste the following URL of the dataset into the appropriate box and click OK:  https://cv-studio-accessible.s3.us-south.cloud-object-storage.appdomain.cloud/cats_dogs_images_.zip  Note: if your internet connection is slow some images may fail to upload, don't worry, your lab will still run."
+	},
+	"text_007": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Lab: Logistic Regression With Mini-Batch Gradient Descent",
+		"unit": "Logistic Regression With Mini-Batch Gradient Descent",
+		"body": "You may also download the lab file, click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_008": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Lab: Hand-written Digits Image Classification with Softmax",
+		"unit": "Hand-written Digits Image Classification with Softmax",
+		"body": "You may also download the lab file, click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_009": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Lab: Support Vector Machines vs Vanilla Linear Classifier",
+		"unit": "Support Vector Machines vs Vanilla Linear Classifier",
+		"body": "You may also download the lab file, click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_010": {
+		"section": "Week 3 - Machine Learning Image Classification",
+		"subsection": "Lab: Image Classification with SVM and CV Studio",
+		"unit": "Image Classification with SVM and CV Studio",
+		"body": "In this lab, you will learn how to train and use Support Vector Machines (SVM) to classify dogs and cats with the provided dataset. Opening the tool will direct you to CV Studio. We have already created a project template for you, so you can get right to the action! To upload the dataset, open the drop down menu at the top right of the page and click \"Upload from URL\". \n  Then copy and paste the following URL of the dataset into the appropriate box and click OK:\n https://cv-studio-accessible.s3.us-south.cloud-object-storage.appdomain.cloud/cats_dogs_images_.zip Note: if your internet connection is slow some images may fail to upload, don't worry, your lab will still run. "
+	},
+	"text_011": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Lab: Simple Neural Network for XOR",
+		"unit": "Simple Neural Network for XOR",
+		"body": "You may also download the lab file. Click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_012": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Lab: Neural Network Rectified Linear Unit (ReLU) vs Sigmoid",
+		"unit": "Neural Network Rectified Linear Unit (ReLU) vs Sigmoid",
+		"body": "You may also download the lab file. Click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_013": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Lab: Training A Neural Network with Momentum",
+		"unit": "Training A Neural Network with Momentum",
+		"body": "You may also download the lab file. Click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_014": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Lab: Convolutional Neural Network",
+		"unit": "Convolutional Neural Network",
+		"body": "You may also download the lab file. Click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_015": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Lab: Data Augmentation",
+		"unit": "Data Augmentation",
+		"body": "You may also download the lab file. Click\u00a0 HERE \u00a0to download the lab notebook (.ipynb) file."
+	},
+	"text_016": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Reading: Deploying a Model",
+		"unit": "Deploying a Model",
+		"body": "One way to get other people to use your model is to deploy it via Web Application or Web App. This allows users to interact with your model like a website. They can upload the image with a user interface and view the results. Let's see how we can deploy a web app in CV Studio. Just like before, upload your images and label them: Train your model: Go to use model select New Application: Fill out the window as follows: give your model a name, select  Models in this project , select  TEST - 1-click Deploy your Model to Cloud (Code Engine  and select the model from the  training run: When the  Status  is  ready , select  URL . This may take some time. You can now drag and drop images for classification:   You can also display your apps to the world on the CV Studio Project Showcase."
+	},
+	"text_017": {
+		"section": "Week 4 - Neural Networks and Deep Learning for Image Classification",
+		"subsection": "Lab: Use CNN for \"Hotdog, Not Hotdog\" Classifier and Deploy Model with CV Studio",
+		"unit": "Use CNN for \"Hotdog, Not Hotdog\" Classifier and Deploy Model with CV Studio",
+		"body": "In this lab, you will use a Convolutional Neural Network (CNN) to classify whether an image is a hotdog or not a hotdog with the provided dataset.\n Opening the tool will direct you to CV Studio. We have already created a project template for you, so you can get right to the action! To upload the dataset, open the drop down menu at the top right of the page and click \"Upload from URL\". \nThen copy and paste the following URL of the dataset into the appropriate box and click OK:\n https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-Coursera/labs/Module4/images_100_hotdogs_v2.zip Note: if your internet connection is slow some images may fail to upload, don't worry, your lab will still run."
+	},
+	"text_018": {
+		"section": "Week 5 - Object Detection",
+		"subsection": "Lab: Car Detection with Haar Classifiers",
+		"unit": "Car Detection with Haar Classifiers",
+		"body": "In this notebook, you will learn how to detect a car in an image using the Haar Cascade Classifiers. You will use CV Studio with a pre-trained detector and will not need to upload any dataset for this lab. When creating the project make sure the Type of the project is set to Object Detection as shown below. For this lab, You will not need to upload any data, you will be using a pre-trained dataset, start from the Use Model to open the notebook."
+	},
+	"text_019": {
+		"section": "Week 5 - Object Detection",
+		"subsection": "Reading: Object Detection with Deep Learning",
+		"unit": "Object Detection with Deep Learning",
+		"body": "In this section, we will review\u00a0Object Detection using CNNs. We will focus on the output of the CNN and assume a sliding window is used. In the next section, we will discuss more effective methods that do not rely on sliding windows, but the output of the CNN is similar in any case. We will discuss the prediction step as well as give an overview of training.  This section will provide an overview, as there are many details in object detection depending on the application. In addition, evaluating Object Detectors is complex, so we will leave some references for further reading. \u00a0 \nObject Detection Prediction\u00a0 We can use a sliding window and a CNN to detect an object. We classify the image as a background or part of another class. We typically use the popular\u00a0CNN Architectures\u00a0pre-trained on ImageNet as shown here: Figure 1: CNN Architectures with SoftMax on the output layer.  Where the number of neurons in the output softmax layer is equal to the number of classes. In many CNNs used for object detection, we add four neurons to the output layer to predict the bounding box, as shown in the following figure. Figure 2: CNN Architectures with the SoftMax and box prediction on the output\u00a0layer. Each neuron outputs a different component of the box. This relationship is shown in Figure 3, with the corresponding bounding box around the object. We colour y hat and x hat to distinguish between the object class prediction y and x. To avoid confusion, unless explicitly referring to the coordinates system, we will use the term \"box hat\" to represent the output of these neurons.\u00a0 Figure 3. Relationship with the corresponding bounding box and neurons, we use oversized pixel indexes for clarity. Unlike classification, the output values of the neuron take on real numbers. Some possible values are shown in figure 4. Figure 4. Real numbers output values of box neurons To predict the class of the bounding box, we use the softmax layers as shown in Figure 6. We have an output for each class, in this case: dog, cat, bird, and background. We can use the probability or the output of the activation. Figure 5. softmax layers used to predict the class of bounding box for three classes  Consider the example in Figure 6 - we have the bounding box in red. To find the class of the bounding box, we use the output of the softmax layer. Examining the probabilistic output of the softmax layer, we have four outputs: 0.7 for \"dog\", 0.1 for \"cat\", 0.05 for \"bird\", and 0.15 for background. Hence, we select \"dog\" as the classification, since the softmax has the highest output for that class. Figure 6. example of softmax layers used to predict the class of bounding box for three classes  Training for Object Detection\u00a0 Training in Object Detection has two objectives: we have to determine the learnable parameters for the box and we have to determine the bounding boxes class.\u00a0In order to determine the learnable parameters for the bounding box, we use the L2 or squared loss. This is used to find the difference between real value predictions. The\u00a0L2 Loss\u00a0Function calculates squared differences between the actual box value and the predicted box, as shown in figure 7, where we have the box and the L2 Loss for each coordinate of the box. Figure 7.  the\u00a0L2 Loss\u00a0Function calculates squared differences between the actual box value and the predicted box. The loss for each box is given by: Finally, to determine the classification, we combine the L2 cost with the cross-entropy loss in a Weighted Sum. This is called the Multitask Loss, which we use to determine the cost. We then use this to determine all the parameters using gradient descent to minimize the cost. Multitask Loss = L2 Loss + Cross entropy \nTypes of Object Detection\u00a0\n\n Sliding window techniques are slow. Fortunatly, there are two major types of object detection that speed up the process. Region-based object detection breaks up the image into regions and performs a prediction, while Single-Stage uses the entire image.\u00a0 Region-Based Convolutional Neural Network (R-CNN) are usually more accurate but slower; they include R-CNN, fast RCNN and Faster RCNN. Single-Stage methods are faster but less accurate and include techniques like Single Shot Detection (SSD) and You Only Look Once (YOLO)\u00a0. In the following two labs, you will use\u00a0Faster RCNN for prediction. You will train an SSD model, even though SSD is considerably faster than other methods, it will still take a long time to train. Therefore we will train most of the model for you, and you will train the model for the last few iterations.  References and Further Reading  Jaccard Index Evolution Of Object Detection Networks Girshick, Ross. \"Fast R-CNN.\"\u00a0 Proceedings of the IEEE international conference on computer vision . 2015. Ren, Shaoqing, et al. \"Faster R-CNN: Towards real-time object detection with region proposal networks.\" 2015"
+	},
+	"text_020": {
+		"section": "Week 5 - Object Detection",
+		"subsection": "Lab: Object Detection using Pre-trained Models CV Studio",
+		"unit": "Object Detection using Pre-trained Models CV Studio",
+		"body": "In this lab, you will use MobileNet with Single Shot MultiBox Detector model  as a pre-trained model to detect whether someone is wearing a mask or not wearing a mask. In addition, you will also deploy the app, similar to the CNN classification lab.  Upload the dataset by URL, through the drop down \"Upload\" menu, as you have done with previous labs.   Use the following URL: https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CV0101EN-Coursera/dataset/images.zip \n  Alternatively, you can download the  dataset  and upload it manually. If you choose to do so, make sure the file is zipped when you upload the dataset.\n"
+	},
+	"text_021": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Project Overview",
+		"unit": "Project Overview",
+		"body": "In case you are having issues viewing the lab instructions below or prefer to view the instructions in a new browser tab,  click here . In case you have trouble viewing the lab instructions above, you can also view them by  clicking here"
+	},
+	"text_022": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Task 1: Gather and Upload Your Data",
+		"unit": "Task 1: Gather and Upload Your Data",
+		"body": "To train your Classifier, you will need to download the dataset containing the \"Bell Pepper\" images found \ud83d\udc49\u00a0 here  \ud83d\udc48 and the \"Chili Pepper\" sign images found \ud83d\udc49\u00a0 here  \ud83d\udc48 . They are zipped in a folder. 1. Click on Open Tool. 2. Sign in with your created credentials if it prompts you to. 3. Select the template for this project and click \"Create Project\" 4. Unzip\u00a0the\u00a0files, then drag and drop the folders into CV Studio. 5. Make sure to wait between each folder to ensure that it has loaded properly. 6. Confirm that images have been loaded. 7. In the\u00a0annotate\u00a0section, you will see that the images are pre-labeled with the folder name. Proceed to the next Task, once you have gathered and uploaded your images and verified that your images are pre-labeled in the\u00a0Annotation\u00a0tab of CV Studio."
+	},
+	"text_023": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Task 2: Training Your Classifier",
+		"unit": "Training Your Classifier",
+		"body": "In case you are having issues viewing the lab instructions below or prefer to view the instructions in a new browser tab,  click here . In case you have trouble viewing the lab instructions above, you can also view them by  clicking here"
+	},
+	"text_024": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Task 3: Deploy to Code Engine",
+		"unit": "Deploy to Code Engine",
+		"body": "In case you are having issues viewing the lab instructions below or prefer to view the instructions in a new browser tab,  click here . In case you have trouble viewing the lab instructions above, you can also view them by  clicking here"
+	},
+	"text_025": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Task 4: Test Your Classifier",
+		"unit": "Test Your Classifier",
+		"body": "In case you are having issues viewing the lab instructions below or prefer to view the instructions in a new browser tab,  click here . In case you have trouble viewing the lab instructions above, you can also view them by  clicking here"
+	},
+	"text_026": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Task 5: Peer Reviewed Assignment",
+		"unit": "Peer Reviewed Assignment",
+		"body": "After completing the required tasks, you need to submit your work for peer review. This guided project will count as 20% of your final grade. To get a good grade, please: Check your work before you submit it. For each class and its prediction, take screenshots of your test images and the predictions from Code Engine. Upload the file to the \"upload\" prompt. General Grading Instructions: Poor - 0 point : No screenshots were provided  Fair - 1 point:  Provided image to test but no prediction Excellent - 2 points:  Provided image to test and prediction In addition, there are several harder questions worth more points."
+	},
+	"text_027": {
+		"section": "Week 6 - Project Case",
+		"subsection": "Task 5: Peer Reviewed Assignment",
+		"unit": "Peer Reviewed Assignment",
+		"body": "Upload the screenshots of your results from the 1st image for Bell Pepper "
+	},
+	"text_028": {
+		"section": "Course Rating",
+		"subsection": "Course Rating",
+		"unit": "Course Rating and Feedback",
+		"body": "\nFill out my  online form .\n"
+	},
+	"text_029": {
+		"section": "Badge",
+		"subsection": "Badge Frequently Asked Questions",
+		"unit": "Frequently Asked Questions",
+		"body": "Q: What is a digital badge? A: A digital badge is a portable online data object which represents an outcome or achievement. They are secure, web-enabled credentials that contain granular, verified information employers can use to evaluate an individual's potential. Q: How does my credential get displayed as a digital badge? A: edX and IBM have partnered with Credly to leverage their platform to translate your learning outcomes or experiences into the digital badges. This allows the badge earner (you) to accept, manage and share your digital badge and the credentials it represents as a digital asset. Q: What are the benefits of a badge? A: Representing your skills as a badge gives you a way to share your abilities online in a way that is simple, trusted and can be easily verified in real time. Badges provide employers and peers concrete evidence of what you had to do to earn your credential and what you\u2019re now capable of. Credly also offers labor market insights, based on your skills. You can search and apply for job opportunities right through the Credly platform Q: Who is Credly? A: Credly is a digital badge platform that works with credible organizations to provide digital credentials to individuals, worldwide Q. What is the relationship between edX, IBM and Credly? A: edX and IBM have each entered into a relationship with Credly to implement a program for web-enabled credentials displayed as digital badges. Credly is the web site from which you claim (accept), store and transmit open badges related to your credentials and where those to whom you send your credentials verify the metadata contained within. edX is the issuer of badges for IBM courses on  edx.org , as authorized by IBM. Q. Is there a cost associated with claiming and displaying my digital badge? A: Accepting, storing, managing and sharing edX and IBM digital badges is free for digital badge earners with Credly. Q: How will I know if I\u2019ve earned a badge? A: Once you complete your IBM course as a  verified  learner, a section will appear to introduce the badge along with a button to claim the badge (provide consent and acknowledge that you will receive an email from Credly). After you consent by clicking the \u201cclaim my badge\u201d button, you will receive an email notification from Credly (admin@credly.com) with instructions for setting up your Credly account and claiming your badge.  Q: What if I don\u2019t want my badge to be public? A: You can easily configure your privacy settings in your Credly account. Q: What\u2019s to keep someone else from copying my badge and using it? A: While badges are simply digital image files, they are uniquely linked to data hosted on the Credly platform. This link to verified data makes them more reliable and secure than a paper-based certificate. It also eliminates the possibility of anyone claiming your credential and your associated identity. Q: Where and how can I share my badge through Credly? A: You can easily share your badge directly from the Credly platform to LinkedIn, Twitter and Facebook; over email; embedded in a website or in your email signature. You've worked hard to earn your credentials, so why not share this accomplishment with your colleagues? Every credential and profile on Credly has a unique URL that can be embedded on a resume or website. Credly also offers seamless integration with several popular social and professional networking platforms for the display of credentials as badges. Follow Credly's step-by-step instructions to  add your badge to your LinkedIn profile See this video for instructions specific to Gmail and Outlook (02:26) Q: What are labor market insights and how can I access them through Credly? A: Labor market insights are pulled from live job requisitions. Based on your skills you can learn which employers are hiring, what job titles you might be qualified for, salary ranges and more. Search active job listings and even apply for them with just a few clicks through Credly. Access the labor market insights from your badge details page by clicking on Related Jobs, or by clicking on the skill tags assigned to your badge. Q: I have a question about the Credly platform. Where can I find support? A: You can find answers to frequently asked questions here:  support.credly.com Q: I have a question about claiming my badge via the edX platform. Where can I find support? A: Contact edX learner support. Go to  https://courses.edx.org/support/contact_us"
+	},
+	"text_030": {
+		"section": "Course Team and Notices",
+		"subsection": "Course Team",
+		"unit": "Course Team",
+		"body": "Primary Instructor Nayef Abou Tayoun [ LinkedIn ] Production Team Publishing: Grace Barker Teaching Assistants and Forum Moderators Anamika Agarwal Srishti Srivastava Shubham Yadav"
+	},
+	"text_031": {
+		"section": "Course Team and Notices",
+		"subsection": "Copyright and Trademarks",
+		"unit": "Copyrights and Trademarks",
+		"body": "Copyrights and Trademarks IBM\u00ae, the IBM logo, and ibm.com\u00ae are trademarks or registered trademarks of International Business Machines Corporation in the United States, other countries, or both. A current list of IBM trademarks is available on the Web at \u201cCopyright and trademark information\u201d\u00a0at:\u00a0ibm.com/legal/copytrade.shtml References to IBM products or services do not imply that IBM intends to make them available in all countries in which IBM operates. Other product, company or service names may be trademarks or service marks of others."
+	}
+}

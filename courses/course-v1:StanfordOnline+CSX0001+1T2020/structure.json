@@ -1,0 +1,435 @@
+{
+	"z54": {
+		"16c94d21d9b24a6a8a2b723e6b7d7d22": {
+			"c172ebfb206a435597672344d893e8c2": {
+				"section": "Week 1",
+				"subsection": "Welcome (start here)",
+				"unit": "Welcome"
+			}
+		},
+		"z1": {
+			"51299c63392e4f39a29ad524437d8e5f": {
+				"section": "Week 1",
+				"subsection": "Introduction",
+				"unit": "Stanford CS101 Introduction"
+			}
+		},
+		"z13": {
+			"7c533a332e754bb9a2bcfcb6ef53ec70": {
+				"section": "Week 1",
+				"subsection": "Code Writing",
+				"unit": "Code Writing"
+			},
+			"z20": {
+				"section": "Week 1",
+				"subsection": "Code Writing",
+				"unit": "Code Writing Exercises"
+			}
+		},
+		"z23": {
+			"z26": {
+				"section": "Week 1",
+				"subsection": "Code Variables",
+				"unit": "Code Variables Lecture"
+			},
+			"z28": {
+				"section": "Week 1",
+				"subsection": "Code Variables",
+				"unit": "Code Variables Problems"
+			}
+		},
+		"z31": {
+			"z34": {
+				"section": "Week 1",
+				"subsection": "Digital Images",
+				"unit": "Digital Images"
+			},
+			"z37": {
+				"section": "Week 1",
+				"subsection": "Digital Images",
+				"unit": "Problems"
+			}
+		},
+		"z41": {
+			"888c5d1ed45749a6ab2f2441e2ba64a0": {
+				"section": "Week 1",
+				"subsection": "Image Code",
+				"unit": "Image Code"
+			},
+			"z50": {
+				"section": "Week 1",
+				"subsection": "Image Code",
+				"unit": "Problems"
+			}
+		}
+	},
+	"z100": {
+		"z55": {
+			"z58": {
+				"section": "Week 2",
+				"subsection": "Image For-Loop",
+				"unit": "Image For-Loop"
+			},
+			"5c4b55e1730e4b9c832ab5ca027cea4f": {
+				"section": "Week 2",
+				"subsection": "Image For-Loop",
+				"unit": "Exercises"
+			}
+		},
+		"z66": {
+			"z69": {
+				"section": "Week 2",
+				"subsection": "Image Expressions",
+				"unit": "Image Expressions"
+			},
+			"z75": {
+				"section": "Week 2",
+				"subsection": "Image Expressions",
+				"unit": "Problems"
+			}
+		},
+		"z79": {
+			"z82": {
+				"section": "Week 2",
+				"subsection": "Image Puzzles",
+				"unit": "Image Puzzles"
+			},
+			"z86": {
+				"section": "Week 2",
+				"subsection": "Image Puzzles",
+				"unit": "Problems"
+			}
+		},
+		"z90": {
+			"z93": {
+				"section": "Week 2",
+				"subsection": "Grayscale Images",
+				"unit": "Grayscale Images"
+			},
+			"z97": {
+				"section": "Week 2",
+				"subsection": "Grayscale Images",
+				"unit": "Problems"
+			}
+		}
+	},
+	"z143": {
+		"z101": {
+			"z104": {
+				"section": "Week 3",
+				"subsection": "Image Logic",
+				"unit": "Image Logic"
+			},
+			"z110": {
+				"section": "Week 3",
+				"subsection": "Image Logic",
+				"unit": "Problems"
+			}
+		},
+		"z113": {
+			"z116": {
+				"section": "Week 3",
+				"subsection": "Image Bluescreen",
+				"unit": "Image Bluescreen"
+			},
+			"z122": {
+				"section": "Week 3",
+				"subsection": "Image Bluescreen",
+				"unit": "Problems"
+			}
+		},
+		"z125": {
+			"z128": {
+				"section": "Week 3",
+				"subsection": "Computer Hardware",
+				"unit": "Computer Hardware"
+			},
+			"67b4be0d62994d89ade7b3511df00af5": {
+				"section": "Week 3",
+				"subsection": "Computer Hardware",
+				"unit": "Problems"
+			}
+		},
+		"cd7dc1cce8774460a7a0e8d01e4f292e": {
+			"c51d48407d7d4a63a5aa219790787ccd": {
+				"section": "Week 3",
+				"subsection": "Optional Video: Moore's Law Flashlight (2:35)",
+				"unit": "Moore's Law Video"
+			}
+		},
+		"87c7b7218e0a4b48951b136171318b19": {
+			"2390a6bb5eda4eefae61338e07b1270c": {
+				"section": "Week 3",
+				"subsection": "Optional Video: How a Hard Drive Works (6:00)",
+				"unit": "Hard Drive Video"
+			}
+		},
+		"z129": {
+			"z132": {
+				"section": "Week 3",
+				"subsection": "Bits and Bytes",
+				"unit": "Bits and Bytes"
+			},
+			"z133": {
+				"section": "Week 3",
+				"subsection": "Bits and Bytes",
+				"unit": "Problems"
+			}
+		},
+		"z136": {
+			"z139": {
+				"section": "Week 3",
+				"subsection": "Kilobytes Megabytes Gigabytes",
+				"unit": "Kilobytes Megabytes Gigabytes"
+			},
+			"z140": {
+				"section": "Week 3",
+				"subsection": "Kilobytes Megabytes Gigabytes",
+				"unit": "Problems"
+			}
+		},
+		"36e163dae6694e7baff9c3ee4197b529": {
+			"86d28d8b19e84a39991960e0c5c83dc5": {
+				"section": "Week 3",
+				"subsection": "Make Your Own Bluescreen (optional)",
+				"unit": "Make Your Own Bluescreen"
+			}
+		}
+	},
+	"z187": {
+		"z144": {
+			"z147": {
+				"section": "Week 4",
+				"subsection": "Software",
+				"unit": "Software"
+			},
+			"z148": {
+				"section": "Week 4",
+				"subsection": "Software",
+				"unit": "Problems"
+			}
+		},
+		"z151": {
+			"z154": {
+				"section": "Week 4",
+				"subsection": "Computer Languages",
+				"unit": "Computer Languages"
+			},
+			"z155": {
+				"section": "Week 4",
+				"subsection": "Computer Languages",
+				"unit": "Problems"
+			}
+		},
+		"z158": {
+			"z161": {
+				"section": "Week 4",
+				"subsection": "Computer Networking",
+				"unit": "Computer Networking"
+			},
+			"z162": {
+				"section": "Week 4",
+				"subsection": "Computer Networking",
+				"unit": "Problems"
+			}
+		},
+		"z165": {
+			"z168": {
+				"section": "Week 4",
+				"subsection": "The Internet - TCP/IP",
+				"unit": "The Internet"
+			},
+			"z169": {
+				"section": "Week 4",
+				"subsection": "The Internet - TCP/IP",
+				"unit": "Network 2 Exercises"
+			}
+		},
+		"z172": {
+			"z175": {
+				"section": "Week 4",
+				"subsection": "Table Data",
+				"unit": "Table Data"
+			},
+			"z183": {
+				"section": "Week 4",
+				"subsection": "Table Data",
+				"unit": "Problems"
+			}
+		}
+	},
+	"z208": {
+		"z188": {
+			"z191": {
+				"section": "Week 5",
+				"subsection": "Table startsWith endsWith",
+				"unit": "Table startsWith endsWith"
+			},
+			"fe79248302a14086ab638eec9a551604": {
+				"section": "Week 5",
+				"subsection": "Table startsWith endsWith",
+				"unit": "Problems"
+			}
+		},
+		"z192": {
+			"z195": {
+				"section": "Week 5",
+				"subsection": "Table Boolean Logic",
+				"unit": "Table Boolean Logic"
+			},
+			"fbc9928263d6452ca9e410a182f3684d": {
+				"section": "Week 5",
+				"subsection": "Table Boolean Logic",
+				"unit": "Problems"
+			}
+		},
+		"z196": {
+			"z199": {
+				"section": "Week 5",
+				"subsection": "Table Counting",
+				"unit": "Table Counting"
+			},
+			"852521fe541c4fbda038ee4d1aafe3d6": {
+				"section": "Week 5",
+				"subsection": "Table Counting",
+				"unit": "Problems"
+			}
+		},
+		"z200": {
+			"z203": {
+				"section": "Week 5",
+				"subsection": "Table Counting Multiple",
+				"unit": "Table Counting Multiple"
+			},
+			"9cf0cc5a338c42ffafe53800af30f88a": {
+				"section": "Week 5",
+				"subsection": "Table Counting Multiple",
+				"unit": "Problems"
+			}
+		},
+		"z204": {
+			"z207": {
+				"section": "Week 5",
+				"subsection": "Analog and Digital",
+				"unit": "Analog and Digital"
+			},
+			"e0a97a4040e940dbb058e7cb4aba3bdf": {
+				"section": "Week 5",
+				"subsection": "Analog and Digital",
+				"unit": "Problems"
+			}
+		}
+	},
+	"z229": {
+		"z213": {
+			"z216": {
+				"section": "Week 6",
+				"subsection": "Analog and Digital Part 2",
+				"unit": "Analog and Digital 2"
+			},
+			"65648cd011d04e12a79af1c53fa0d59e": {
+				"section": "Week 6",
+				"subsection": "Analog and Digital Part 2",
+				"unit": "Problems"
+			}
+		},
+		"z217": {
+			"z220": {
+				"section": "Week 6",
+				"subsection": "Digital Media",
+				"unit": "Digital Media"
+			},
+			"b0a3783b53ab46c6b25aa96530bc61c5": {
+				"section": "Week 6",
+				"subsection": "Digital Media",
+				"unit": "Problems"
+			}
+		},
+		"aa2b16bfd6f94386b4880083a31fb32b": {
+			"3340d643c07b47afa1d9b2ace71e0752": {
+				"section": "Week 6",
+				"subsection": "Spreadsheets",
+				"unit": "Spreadsheets"
+			},
+			"72d6579b1d494c65befb8ae349d07d00": {
+				"section": "Week 6",
+				"subsection": "Spreadsheets",
+				"unit": "Problems"
+			}
+		},
+		"z221": {
+			"z224": {
+				"section": "Week 6",
+				"subsection": "Computer Security",
+				"unit": "Computer Security 1"
+			},
+			"204f0ca22e954952a2bf03648b26deb1": {
+				"section": "Week 6",
+				"subsection": "Computer Security",
+				"unit": "Problems"
+			},
+			"ee8c9c45eb09406fad89bea6c0c44119": {
+				"section": "Week 6",
+				"subsection": "Computer Security",
+				"unit": "Computer Security 2"
+			},
+			"cc4ab96c112448eba9c55f1fef7cda05": {
+				"section": "Week 6",
+				"subsection": "Computer Security",
+				"unit": "Problems"
+			},
+			"38d49508f4ff4e43abb047b8fc40a386": {
+				"section": "Week 6",
+				"subsection": "Computer Security",
+				"unit": "Computer Security 3"
+			},
+			"786f1817c0dd48a387dec6d33bcc96a6": {
+				"section": "Week 6",
+				"subsection": "Computer Security",
+				"unit": "Problems"
+			}
+		},
+		"z225": {
+			"z228": {
+				"section": "Week 6",
+				"subsection": "Conclusions",
+				"unit": "Final Conclusions"
+			},
+			"17e7be4303e84349bccbddbe02e2d2ba": {
+				"section": "Week 6",
+				"subsection": "Conclusions",
+				"unit": "Post-Course Survey"
+			}
+		}
+	},
+	"d1714dd9a6f84dd683be1eb737b6dbfe": {
+		"d47eb90418a64f3b8c7a8e0467f0db45": {
+			"65caa9366eec43c7b4c2a993d8f955c9": {
+				"section": "Course Resources",
+				"subsection": "Course Syllabus and How-To",
+				"unit": "Course How-To"
+			}
+		},
+		"2188c8cbabb34488be854c63fd80a782": {
+			"5c4bbcccf7c94f5fbbb72bdcaeafa0b2": {
+				"section": "Course Resources",
+				"subsection": "CS101 Browser Checker",
+				"unit": "Vertical"
+			}
+		},
+		"b90374914f014763962c3b0ed76554a2": {
+			"ac9c339508e84f4286d327fb57ed2341": {
+				"section": "Course Resources",
+				"subsection": "RGB Explorer",
+				"unit": "RGB Explorer"
+			}
+		},
+		"7a96ffaf52994869a08660eaac191c0c": {
+			"9c50be3dd4a84b34a5e4f44f21872871": {
+				"section": "Course Resources",
+				"subsection": "Image Functions Reference",
+				"unit": "Vertical"
+			}
+		}
+	}
+}

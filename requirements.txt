@@ -1,0 +1,7 @@
+ipykernel 
+lxml
+webvtt-py
+youtube_dl
+requests
+textstat
+speechbrain

@@ -1,0 +1,155 @@
+{
+	"67588b76ec534f7da0fa917fac4350b8": {
+		"e34815b879f345779a17d99fad036ba5": {
+			"35781a23ed0e436eac9a9e6cc27b1b64": {
+				"section": "CS50G 2020",
+				"subsection": "Introduction",
+				"unit": "Introduction"
+			}
+		},
+		"72c04e2f9eb24f6494ca99b582ae67ef": {
+			"8576f1b96ffb47bf9205768985f04ca3": {
+				"section": "CS50G 2020",
+				"subsection": "Pong",
+				"unit": "Pong"
+			},
+			"ebf074a2c8314e15b1c7ddec03d95c82": {
+				"section": "CS50G 2020",
+				"subsection": "Pong",
+				"unit": "Lecture"
+			}
+		},
+		"d7f9b0310d0d42cb91f4a90ac76b4706": {
+			"e2a86d781f7b4fb296dfce088eec57e2": {
+				"section": "CS50G 2020",
+				"subsection": "Flappy Bird",
+				"unit": "Flappy Bird"
+			},
+			"114049a3d5c74988afd819a67894efa9": {
+				"section": "CS50G 2020",
+				"subsection": "Flappy Bird",
+				"unit": "Lecture"
+			}
+		},
+		"ca386adaf12344b2b3f8760dbf1f5e0e": {
+			"d58cf48ab4e749af9bb9cef1d7962e8a": {
+				"section": "CS50G 2020",
+				"subsection": "Breakout",
+				"unit": "Breakout"
+			},
+			"ec9b73e83f134172961bd863f41faeda": {
+				"section": "CS50G 2020",
+				"subsection": "Breakout",
+				"unit": "Lecture"
+			}
+		},
+		"242fb35f1ce744a99b3cff3725a211e1": {
+			"fcf1ea30d4284013a1dd244113eabc36": {
+				"section": "CS50G 2020",
+				"subsection": "Match 3",
+				"unit": "Match 3"
+			},
+			"1f2e216598794b07b0ed5639345975a0": {
+				"section": "CS50G 2020",
+				"subsection": "Match 3",
+				"unit": "Lecture"
+			}
+		},
+		"adb271e8920b4280909bb6a75be114cd": {
+			"b59eb6e8cf3c48b09d83903f2b94908d": {
+				"section": "CS50G 2020",
+				"subsection": "Super Mario Bros.",
+				"unit": "Super Mario Bros."
+			},
+			"995fe192231240639e67a8bacb8d93eb": {
+				"section": "CS50G 2020",
+				"subsection": "Super Mario Bros.",
+				"unit": "Lecture"
+			}
+		},
+		"fc12ac89f1814c42b517439a4190bdc5": {
+			"30d06567d14f4fe2ab52b1edaf80abcb": {
+				"section": "CS50G 2020",
+				"subsection": "Legend of Zelda",
+				"unit": "Legend of Zelda"
+			},
+			"64f11a575e6e4f04a3afc324a4be8c76": {
+				"section": "CS50G 2020",
+				"subsection": "Legend of Zelda",
+				"unit": "Lecture"
+			}
+		},
+		"d9f4a3b8b066409ca7e9d9882ee6aec5": {
+			"6c8004dea06b40b287351be8c9fb3944": {
+				"section": "CS50G 2020",
+				"subsection": "Angry Birds",
+				"unit": "Angry Birds"
+			},
+			"852e32afaffd4ff290d5e41c00698bb6": {
+				"section": "CS50G 2020",
+				"subsection": "Angry Birds",
+				"unit": "Lecture"
+			}
+		},
+		"03d5f575d06e43269d7c3adf2c45f73e": {
+			"bc0a61150ea3497789f38c4841b2a1d0": {
+				"section": "CS50G 2020",
+				"subsection": "Pok\u00e9mon",
+				"unit": "Pok\u00e9mon"
+			},
+			"74ed7d9ed73744578e5b703d48ee4b91": {
+				"section": "CS50G 2020",
+				"subsection": "Pok\u00e9mon",
+				"unit": "Lecture"
+			}
+		},
+		"c80b06eebc9d4d6fb0b6a475df4ce60c": {
+			"dc0e1352fcab4c11b4a865fc47390355": {
+				"section": "CS50G 2020",
+				"subsection": "3D Helicopter Game",
+				"unit": "3D Helicopter Game"
+			},
+			"b22eb7bd8254486a98580b1d19cda8b5": {
+				"section": "CS50G 2020",
+				"subsection": "3D Helicopter Game",
+				"unit": "Lecture"
+			}
+		},
+		"f1ef915bfae943989322d57dd01d303b": {
+			"a621edde974141ca9a1c6b3fb5fb7600": {
+				"section": "CS50G 2020",
+				"subsection": "Dreadhalls",
+				"unit": "Dreadhalls"
+			},
+			"a3501941bcec4ed48bf7ae5222675636": {
+				"section": "CS50G 2020",
+				"subsection": "Dreadhalls",
+				"unit": "Lecture"
+			}
+		},
+		"0da231f9a45d49f29f364b23ba2dcd53": {
+			"198f028043be412380517bc2587fdb5c": {
+				"section": "CS50G 2020",
+				"subsection": "Portal",
+				"unit": "Portal"
+			},
+			"1d4ca57f200344eca9aad3d33c29a1ed": {
+				"section": "CS50G 2020",
+				"subsection": "Portal",
+				"unit": "Lecture"
+			}
+		},
+		"697d8098020a460f964f623c01c6ae0f": {
+			"eb4042b03e8e4929b9962366ff740c54": {
+				"section": "CS50G 2020",
+				"subsection": "Portal Problems",
+				"unit": "Portal Problems"
+			},
+			"7ffdc94b391f4b45a85f75004d5812ba": {
+				"section": "CS50G 2020",
+				"subsection": "Portal Problems",
+				"unit": "Lecture"
+			}
+		}
+	}
+}
